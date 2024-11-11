@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resturant</title>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css"
+    />
+    <!-- Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <!-- style -->
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Area Start -->
+    <header>
+      <nav id="navbar">
+        <div class="logo">
+          <a href="">
+            <img src="images/Logo.png" alt="" />
+          </a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li>
+              <a href="">Home</a>
+            </li>
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Portfolio</a>
+            </li>
+            <li>
+              <a href="">Clients</a>
+            </li>
+            <li>
+              <a href="">Blog</a>
+            </li>
+            <li>
+              <a href="">Contact</a>
+            </li>
+          </ul>
+          <div class="cta">
+            <a href="" class="btn">Book a table</a>
+          </div>
+        </div>
+        <button id="mobileBtn">
+          <i class="fa-solid fa-bars fa-xl"></i>
+        </button>
+      </nav>
+      <div class="container">
+        <div class="banner">
+          <div class="left-banner">
+            <div class="title-bg">
+              <h1>Taste the authentic Saudi cuisine</h1>
+            </div>
+            <div class="content">
+              <p>
+                Among the best Saudi chefs in the world, serving you something
+                beyond flavor.
+              </p>
+              <a href="" class="btn">Explore Menu</a>
+            </div>
+          </div>
+          <div class="right-banner">
+            <img src="images/star.png" class="top" alt="star" />
+            <img src="images/banner-right.png" alt="image" />
+            <img src="images/banner-offer.png" class="bottom" alt="" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header Area End -->
+
+    <!-- About Area Start -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-left">
+            <img
+              src="images/about-left-market-place.png"
+              class="market"
+              alt=""
+            />
+            <img src="images/about-left.png" alt="" />
+          </div>
+          <div class="col-right">
+            <div class="tab-nav">
+              <button class="tab-btn active" onclick="openTab(event, 'About')">
+                About
+              </button>
+              <button class="tab-btn" onclick="openTab(event, 'Experience')">
+                Experience
+              </button>
+              <button class="tab-btn" onclick="openTab(event, 'Contact')">
+                Contact
+              </button>
+            </div>
+            <div class="tab-body">
+              <div class="tab-content" id="About" style="display: block">
+                <h2>Exceptional culinary experience and delicious food</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Ornare non sed est cursus. Vel hac convallis ipsum, facilisi
+                  odio pellentesque bibendum viverra tempus. Lorem ipsum dolor
+                  sit amet consectetur adipiscing elit do eiusmod tempor
+                  incididunt ut labore et dolore magna minim veniam nostrud
+                  exercitation.
+                </p>
+                <div class="cta">
+                  <a href="" class="btn">About More</a>
+                  <a href="tel:+88 3426 739 485" class="call">
+                    <img src="images/call-alt.png" alt="" />
+                    <span>+88 3426 739 485</span>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-content" id="Experience">
+                <h2>Exceptional culinary experience</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Reprehenderit iure porro sint incidunt similique rerum. A
+                  laboriosam, provident labore assumenda id earum delectus sit
+                  esse ipsum, debitis, aspernatur ad repellendus?
+                </p>
+                <div class="cta">
+                  <a href="" class="btn">About More</a>
+                  <a href="tel:+88 3426 739 485" class="call">
+                    <img src="images/call-alt.png" alt="" />
+                    <span>+88 3426 739 485</span>
+                  </a>
+                </div>
+              </div>
+              <div class="tab-content" id="Contact">
+                <h2>Exceptional culinary experience and delicious</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Reprehenderit iure porro sint incidunt similique rerum. A
+                  laboriosam, provident labore assumenda id earum delectus sit
+                  esse ipsum, debitis, aspernatur ad repellendus? Lorem ipsum
+                  dolor sit amet.
+                </p>
+                <div class="cta">
+                  <a href="" class="btn">About More</a>
+                  <a href="tel:+88 3426 739 485" class="call">
+                    <img src="images/call-alt.png" alt="" />
+                    <span>+88 3426 739 485</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bottom-row">
+          <div class="col">
+            <div class="icon"><img src="images/package.png" alt="" /></div>
+            <div class="content">
+              <h3>fast delivery</h3>
+              <p>Within 30 minutes</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="icon"><img src="images/certificate.png" alt="" /></div>
+            <div class="content">
+              <h3>absolute dining</h3>
+              <p>Best buffet restaurant</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="icon"><img src="images/delivery.png" alt="" /></div>
+            <div class="content">
+              <h3>pickup delivery</h3>
+              <p>Grab your food order</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="images/about-bell-pepper.png" class="bell" />
+    </section>
+    <!-- About Area End -->
+
+    <!-- Food Item Area Start -->
+    <section id="food-item">
+      <img src="images/food-item-left.png" class="left" alt="" />
+      <div class="container">
+        <div class="row">
+          <div class="col-left">
+            <h3>
+              <span class="box"></span>
+              <span>Crispy, Every Bite Taste</span>
+            </h3>
+            <h2>POPULAR FOOD ITEMS</h2>
+          </div>
+          <div class="col-right">
+            <button class="items-button-prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="items-button-next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+        <div class="itemsSwiper">
+          <div class="swiper-wrapper items">
+            <div class="item swiper-slide">
+              <img src="images/item-1.png" alt="" />
+              <hr />
+              <h2>vegetables burger</h2>
+              <p>Barbecue Italian cuisine pizza</p>
+            </div>
+            <div class="item swiper-slide">
+              <img src="images/item-2.png" alt="" />
+              <hr />
+              <h2>Spacial Pizza</h2>
+              <p>Barbecue Italian cuisine pizza</p>
+            </div>
+            <div class="item swiper-slide">
+              <img src="images/item-3.png" alt="" />
+              <hr />
+              <h2>Spacial French fries r</h2>
+              <p>Barbecue Italian cuisine</p>
+            </div>
+            <div class="item swiper-slide">
+              <img src="images/item-4.png" alt="" />
+              <hr />
+              <h2>Cuisine Chicken</h2>
+              <p>Japanese Cuisine Chicken</p>
+            </div>
+            <div class="item swiper-slide">
+              <img src="images/item-1.png" alt="" />
+              <hr />
+              <h2>vegetables burger</h2>
+              <p>Barbecue Italian cuisine pizza</p>
+            </div>
+            <div class="item swiper-slide">
+              <img src="images/item-2.png" alt="" />
+              <hr />
+              <h2>Spacial Pizza</h2>
+              <p>Barbecue Italian cuisine pizza</p>
+            </div>
+            <div class="item swiper-slide">
+              <img src="images/item-3.png" alt="" />
+              <hr />
+              <h2>Spacial French fries r</h2>
+              <p>Barbecue Italian cuisine</p>
+            </div>
+            <div class="item swiper-slide">
+              <img src="images/item-4.png" alt="" />
+              <hr />
+              <h2>Cuisine Chicken</h2>
+              <p>Japanese Cuisine Chicken</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-right mobile">
+          <button class="items-button-prev">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="items-button-next">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Food Item Area End -->
+
+    <!-- Book Table Area Start -->
+    <section id="book-table">
+      <div class="container">
+        <h3>
+          <span class="box"></span>
+          <span>Book Now</span>
+        </h3>
+        <h2>Book Your Table</h2>
+        <p>
+          Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo
+          molestie vel, ornare non id blandit netus.
+        </p>
+        <form>
+          <div class="row">
+            <input type="text" placeholder="Your Name * " required />
+            <input type="email" placeholder="Your Emai * " required />
+          </div>
+          <div class="row">
+            <div class="date-input">
+              <input
+                type="date"
+                name=""
+                data-placeholder="Reservation Date"
+                id="dateInput"
+                required
+              />
+              <div class="icon">
+                <img src="images/book-table-date.png" alt="" />
+              </div>
+            </div>
+
+            <div class="number-input">
+              <input
+                type="number"
+                name=""
+                placeholder="Total People"
+                min="0"
+                max="100"
+                required
+                id="NumberInput"
+              />
+
+              <div class="arrows">
+                <span class="arrow up">
+                  <i class="fa-solid fa-caret-up"></i>
+                </span>
+                <span class="arrow down">
+                  <i class="fa-solid fa-caret-down"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <textarea name="message" placeholder="Message"></textarea>
+          <button type="submit" class="btn">Book Now</button>
+        </form>
+      </div>
+    </section>
+    <!-- Book Table Area End -->
+
+    <!-- Testimonial Area Start -->
+    <section id="testimonial">
+      <img src="images/customer-say-left.png" class="left" alt="" />
+      <div class="container">
+        <div class="row">
+          <div class="col-left">
+            <h3>
+              <span class="box"></span>
+              <span>Crispy, Every Bite Taste</span>
+            </h3>
+            <h2>What Some of my Customers Say</h2>
+          </div>
+          <div class="col-right">
+            <button class="swiper-button-prev"></button>
+            <button class="swiper-button-next"></button>
+          </div>
+        </div>
+        <div class="slider swiper">
+          <div class="swiper-wrapper">
+            <div class="slide swiper-slide">
+              <div class="content">
+                <img
+                  src="images/customer-say-icon.svg"
+                  class="left-icon"
+                  alt=""
+                />
+                <div class="quote">
+                  <img src="images/quote.png" alt="" />
+                  <p>
+                    You can't go wrong with Chicken Mandi, I had it twice. The
+                    chicken was cooked perfectly, juicy & soft (usually mandi
+                    chicken is a bit dry). I would defiantly recommend it.
+                  </p>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <h3>Khalid Al Dawsry</h3>
+                    <p>Jeddah, Saudi</p>
+                  </div>
+                  <img src="images/customer-image.png" alt="" />
+                </div>
+              </div>
+              <div class="video">
+                <video
+                  src="images/video.mp4"
+                  poster="images/customer-say-thubmnail.png"
+                ></video>
+                <button class="videoBtn">
+                  <i class="fa-solid fa-circle-play"></i>
+                </button>
+              </div>
+            </div>
+            <div class="slide swiper-slide">
+              <div class="content">
+                <img
+                  src="images/customer-say-icon.svg"
+                  class="left-icon"
+                  alt=""
+                />
+                <div class="quote">
+                  <img src="images/quote.png" alt="" />
+                  <p>
+                    You can't go wrong with Chicken Mandi, I had it twice. The
+                    chicken was cooked perfectly, juicy & soft (usually mandi
+                    chicken is a bit dry). I would defiantly recommend it.
+                  </p>
+                </div>
+                <div class="info">
+                  <div class="name">
+                    <h3>Khalid Al Dawsry</h3>
+                    <p>Jeddah, Saudi</p>
+                  </div>
+                  <img src="images/customer-image.png" alt="" />
+                </div>
+              </div>
+              <div class="video">
+                <video
+                  src="images/video.mp4"
+                  poster="images/customer-say-thubmnail.png"
+                ></video>
+                <button class="videoBtn">
+                  <i class="fa-solid fa-circle-play"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-right mobile">
+          <button class="swiper-button-prev"></button>
+          <button class="swiper-button-next"></button>
+        </div>
+      </div>
+      <img src="images/customer-say-right.png" class="right" alt="" />
+    </section>
+    <!-- Testimonial Area End -->
+
+    <!-- Footer Area Start -->
+    <footer>
+      <div class="container">
+        <h2>We ready to have you the best dining experiences</h2>
+        <div class="row">
+          <div class="col">
+            <img src="images/footer-time.png" alt="" />
+            <h3>Opening hours</h3>
+            <p>Monday - Sunday</p>
+            <p>9:00 AM to 11:30 PM</p>
+          </div>
+          <div class="col">
+            <img src="images/footer-call.png" alt="" />
+            <h3>LET'S TALK</h3>
+            <p>Phone: 1-800-222-4545</p>
+            <p>Fax: 1-800-222-4545</p>
+          </div>
+          <div class="col">
+            <img src="images/footer-mail.png" alt="" />
+            <h3>BOOK A TABLE</h3>
+            <p>Email: demo@website.com</p>
+            <p>Support: support@website.com</p>
+          </div>
+          <div class="col">
+            <img src="images/footer-address.png" alt="" />
+            <h3>Our Address</h3>
+            <p>
+              123 Stree New York City , United <br />
+              States Of America.
+            </p>
+          </div>
+        </div>
+        <div class="social">
+          <ul>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-square-x-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-square-instagram"></i>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <p class="copy">© 2023 <a href="">Niomax</a> All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- Footer Area End -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/solid.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
